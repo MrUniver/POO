@@ -107,7 +107,11 @@ class Model{
         return $this;
 	}
 
-    public function validate()
+	/**
+	 * valider
+	 * @return bool
+	 */
+    public function validate():bool
     {
         if (!empty($this->validates) && !empty($_POST)){
             $this->Form->validateur->check($this->validates);
@@ -118,5 +122,23 @@ class Model{
             }
         }
 	}
+
+	/**
+     * @param $fields
+     * @return array|PDOStatement
+     */
+    public function save($fields)
+    {
+        $cles = [];
+        $valeurs = [];
+        foreach ($fields as $key => $value) {
+            $cles[] = $key;
+            $valeurs[] = ':'.$key;
+        }
+        $clesAll = implode(', ', $cles);
+        $valeursAll = implode(', ', $valeurs);
+
+        return $this->prepare('INSERT INTO '.$this->table.' ('.$clesAll.') VALUES('.$valeursAll.')', $fields);
+    }
 
 }
