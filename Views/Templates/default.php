@@ -14,7 +14,7 @@
 </head>
 <body>
 <div class="content" style="margin:20px auto;position: relative; padding: 20px;">
-	<h2>Les modèles : valider les informations</h2>
+	<h2>Les notifications et début création site</h2>
 	<div style="width:80%; margin:0 auto;">
 		<pre>
 			<?= $page_content ?>

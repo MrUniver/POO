@@ -107,10 +107,10 @@ class Model{
         return $this;
 	}
 
-	/**
-	 * valider
-	 * @return bool
-	 */
+
+    /**
+     * @return bool
+     */
     public function validate():bool
     {
         if (!empty($this->validates) && !empty($_POST)){
