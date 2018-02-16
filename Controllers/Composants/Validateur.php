@@ -89,7 +89,7 @@ class Validateur{
      * @param string $parametre
      * @return bool
      */
-	private function between(string $field, string $parametre):bool
+	private function between(string $field, string $parametre)
 	{
 		$nbrs = explode(':', $parametre);
 		if ($this->minlength($field, (int) $nbrs[0]) OR $this->maxlength($field, (int)$nbrs[1])) {

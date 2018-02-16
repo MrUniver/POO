@@ -49,7 +49,6 @@ class Form{
 		$html 	= $this->label($name, $texte); 
 		$type 	= $options['type'] ?? 'text';
 		$errors = $this->validateur->getError($name);
-		//var_dump($this->validateur->getErrors());
 		if(!empty($errors)){
 			$html .=  '<div class="alert alert-danger">';
 			foreach ($errors as $error) {
@@ -78,7 +77,24 @@ class Form{
      */
 	public function end(string $texte):string
 	{
-		return '<button type="submit" class="btn btn-primary">'.$texte.'</button>
+		return '<br><br><button type="submit" class="btn btn-primary">'.$texte.'</button>
 		</form>';
 	}
+
+    /**
+     * @param string $name
+     * @param array $options
+     * @param bool $texte
+     * @return string
+     */
+    public function select(string $name, array $options, $texte = false)
+    {
+        $html = $this->label($name, $texte);
+        $html .= '<select name="'.$name.'" class="form-control" id="'.$name.'">';
+        foreach ($options as $option_key => $option_value) {
+            $html .= '<option value="'.$option_key.'">'.ucfirst($option_value).'</option>'  ;
+        }
+        $html .= '</select>';
+        return $html;
+    }
 }

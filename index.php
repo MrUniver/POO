@@ -6,7 +6,8 @@ define("ROOT", dirname(__FILE__).'\\');
 require 'Config/Autoloader.php';
 Autoloader::register();
 
-Routeur::get("/" , "user@connect");
-Routeur::get("/create" , "user@create");
+/** Methodes du controleur welcomeController */
+Routeur::get("/" , "welcome@connexion");
+Routeur::get("/inscription" , "welcome@inscription");
 
 Routeur::run();

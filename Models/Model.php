@@ -7,14 +7,16 @@ class Model{
 
 	public function __construct()
     {
-        preg_match("/[a-z]+/i", get_called_class(), $matches);
-        $this->table = strtolower($matches[0]) .'s';
+        if ($this->table === null){
+            preg_match("/[a-z]+/i", get_called_class(), $matches);
+            $this->table = strtolower($matches[0]) .'s';
+        }
     }
 
     public function getPDO()
 	{
 		if ($this->pdo ===  null) {
-			$this->pdo = new PDO('mysql:host=localhost;dbname=premier', 'root', '');
+			$this->pdo = new PDO('mysql:host=localhost;dbname=tutoriel', 'root', '');
 			$this->pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 		}
 		return $this->pdo;
@@ -111,7 +113,7 @@ class Model{
     /**
      * @return bool
      */
-    public function validate():bool
+    public function validate()
     {
         if (!empty($this->validates) && !empty($_POST)){
             $this->Form->validateur->check($this->validates);
