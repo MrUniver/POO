@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f9f468fe-1df2-4e2b-802e-edc3aa80df1b" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/Controllers/Composants/Form.php" afterPath="$PROJECT_DIR$/Controllers/Composants/Form.php" />
-      <change beforePath="$PROJECT_DIR$/Controllers/Composants/Validateur.php" afterPath="$PROJECT_DIR$/Controllers/Composants/Validateur.php" />
-      <change beforePath="$PROJECT_DIR$/Models/Model.php" afterPath="$PROJECT_DIR$/Models/Model.php" />
-      <change beforePath="$PROJECT_DIR$/Models/User.php" afterPath="$PROJECT_DIR$/Models/User.php" />
-      <change beforePath="$PROJECT_DIR$/Views/Templates/default.php" afterPath="$PROJECT_DIR$/Views/Templates/default.php" />
-      <change beforePath="$PROJECT_DIR$/Views/Users/create.php" afterPath="$PROJECT_DIR$/Views/Users/create.php" />
-      <change beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-    </list>
+    <list default="true" id="f9f468fe-1df2-4e2b-802e-edc3aa80df1b" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,8 +38,8 @@
       <file leaf-file-name="Form.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Controllers/Composants/Form.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="79" column="24" lean-forward="false" selection-start-line="79" selection-start-column="24" selection-end-line="79" selection-end-column="24" />
+            <state relative-caret-position="319">
+              <caret line="75" column="21" lean-forward="true" selection-start-line="75" selection-start-column="21" selection-end-line="75" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -261,7 +253,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10855000" />
+    <option name="totallyTimeSpent" value="11182000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -494,8 +486,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Controllers/Composants/Form.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="79" column="24" lean-forward="false" selection-start-line="79" selection-start-column="24" selection-end-line="79" selection-end-column="24" />
+        <state relative-caret-position="319">
+          <caret line="75" column="21" lean-forward="true" selection-start-line="75" selection-start-column="21" selection-end-line="75" selection-end-column="21" />
           <folding />
         </state>
       </provider>
